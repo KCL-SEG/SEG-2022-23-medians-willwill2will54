@@ -14,6 +14,6 @@ while True:
         if len(numbers) % 2 == 1:
             middle_num = numbers[middle]
         else:
-            middle_num = numbers[middle] + numbers[middle + 1] / 2
+            middle_num = (numbers[middle] + numbers[middle + 1]) / 2
         print(middle_num) # Print value at middle index
         break
