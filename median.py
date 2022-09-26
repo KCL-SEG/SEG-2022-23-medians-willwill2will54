@@ -10,5 +10,10 @@ while True:
     else:
         numbers.sort() # Sort the list
         middle = len(numbers) // 2 # Get middle index
-        print(numbers[middle]) # Print value at middle index
+
+        if len(numbers) % 2 == 1:
+            middle_num = numbers[middle]
+        else:
+            middle_num = numbers[middle] / numbers[middle + 1]
+        print(middle_num) # Print value at middle index
         break
